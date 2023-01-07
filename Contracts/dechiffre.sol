@@ -1436,7 +1436,7 @@ library Random
 
 contract CercleDrawing is Ownable
 {   
-    int constant FONT_SIZE = 4;
+    int constant FONT_SIZE = 8;
 
     uint8[1024] private curve;
     int8[1024] private noiseTable;
@@ -2107,7 +2107,7 @@ contract CercleDrawing is Ownable
         int angleStart = start - padding;
         uint textId = Random.value(rand);
         
-        string[12] memory sym = ["0.421", "0.36", "0.73","0.421", "0.36", "0.73","0.421", "0.36", "0.73", "+", "^", "_"];
+        string[12] memory sym = ["ETH DUBAI", "DXB", "TEST", "+", "^", "_"];
 
         string memory chars = sym[uint(Random.range(rand, 0, int(sym.length)-1))];
 
@@ -2538,7 +2538,7 @@ contract CercleMetadata is Ownable
 
         StringBuilder memory b = SB.create(2048);
         
-        SB.writeStr(b, "\"description\": \"Cercle is a generative art project by Hideki Tsukamoto comprised of 1024 tokens calculated and drawn via smart-contract, by the Ethereum Virtual Machine. Cercle is part one of the 'Apex' series.\","
+        SB.writeStr(b, "\"description\": \"Cercle is a generative art project for ETH Dubai comprised of 1024 tokens calculated and drawn via smart-contract, by the Ethereum Virtual Machine.\","
             "\"name\": \"Cercle #"); 
         SB.writeUint(b, tokenId);
         SB.writeStr(b, "\","
