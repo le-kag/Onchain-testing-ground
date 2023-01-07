@@ -1823,7 +1823,7 @@ contract CercleDrawing is Ownable
             uint idxInc            = uint(Random.range(rand, 0, int(increments.length)-1));
             int increment           = int8(increments[idxInc]);
             int pad                 = 1;
-            int thisRingThickness = radii[i];
+            int thisRingThickness = radii[i]*2;
 
             
             int innerRadius        = progress+pad;
