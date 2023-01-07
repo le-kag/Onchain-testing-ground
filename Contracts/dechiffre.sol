@@ -2107,7 +2107,7 @@ contract CercleDrawing is Ownable
         int angleStart = start - padding;
         uint textId = Random.value(rand);
         
-        string[12] memory sym = ["ETH DUBAI", "DXB", "TEST", "+", "^", "_"];
+        string[12] memory sym = ["ETH DUBAI", "DXB", "TEST","420", "444", "MARCH","Le Meridien", "Lots of speakers", "Cool stuff", "+", "^", "_"];
 
         string memory chars = sym[uint(Random.range(rand, 0, int(sym.length)-1))];
 
